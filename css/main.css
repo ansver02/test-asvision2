@@ -491,13 +491,24 @@ body {
     margin-bottom: 15px;
     padding: 0;
     width: calc((100% - 30px)/2);
-    background-color: red;
+    min-height: 386px;
+    border-radius: 10px;
   }
   .web-controle__bootom-container .decisions li h3 {
+    margin-left: 65px;
     font-weight: 500;
     font-size: 40px;
     line-height: 100.5%;
     color: #fff;
+  }
+  .web-controle__bootom-container .decisions .advertising-networks {
+    background-image: url(../img/nout-img.jpg);
+  }
+  .web-controle__bootom-container .decisions .tv {
+    background-image: url(../img/tv-img.jpg);
+  }
+  .web-controle__bootom-container .decisions .restorans {
+    background-image: url(../img/restorans-img.jpg);
   }
 }
 /*# sourceMappingURL=main.css.map */

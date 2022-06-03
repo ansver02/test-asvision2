@@ -1,0 +1,104 @@
+.web-controle{
+    background-color: $text-color;
+    padding-top: 65px;
+
+    .web-controle__top-container{
+        .web-controle__info-content{
+            text-align: center;
+            h2{
+                
+                max-width: 345px;
+                
+                margin: 0 auto 0 auto;
+                color: #FFFFFF;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 109.52%;
+                text-align: center;
+        
+                a{
+                    text-decoration: none;
+                    color: $yellow-color;
+                }
+                a:hover{
+                    color: $light-blue-color;
+                }
+               
+            }
+            p{
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 50px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                text-align: center;
+                color: #fff;
+                opacity: 0.8;
+            }
+            .link-container{
+                padding: 0;
+                li{
+                    list-style: none;
+                }
+                .web-controle__free-link{
+                    display: inline-block;
+                    margin-bottom: 30px;
+    
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+                    padding: 15px 30px;
+                    text-decoration: none;
+                    color: $text-color;
+                    background-color: $yellow-color;
+                    &:hover{
+                        background-color: #fff;
+                    }
+    
+                }
+                .web-controle__order-link{
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 50px;
+
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: #fff;
+                    text-decoration: none;
+                   
+                    &:hover{
+                        color: $yellow-color;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: -8px;
+                        left: -55px;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-image: url(../img/icons-arrow/blue_arrow_white_fone.jpg);
+                       
+                    }
+                }
+            }
+
+        }
+        .img-container{
+            text-align: center;
+            .desktop-img{
+                display: none;
+            }
+        }
+    }
+
+    &__bootom-container{
+        display: none;
+    }
+
+}

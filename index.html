@@ -1,74 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>project1</title>
+    <title>test advision2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
 </head>
-<body>
-    <section class="section display-manage">
-        <div class="display-manage__wraper">
-            <div class="decoration-cubs first-cube"></div>
-            <div class="decoration-cubs second-cube">
-                <div></div>
-            </div>
-            <div class="decoration-cubs third-cube"><div></div></div>
-            <div class="display-content">
-                <h2>Управлять экранами — это <a href="#">просто</a></h2>
-                <div class="telephone-text-container">
-                    <p>
-                        Компания Advision - системный интегратор и разработчик
-                        собственного облачного SaaS Digital Signage решения для
-                        ритейла и рекламных операторов. Мы помогаем реализовать 
-                        множество механик, связанных с управлением и монетизацией контента.
-                    </p>
-                    <p>
-                        Система Advision быстро и легко устанавливается практически на любой ПК,
-                         и после этого, способна транслировать аудио и видео рекламно-информационный
-                          контент, на акустические системы и экраны любой технологии и размера.
-                    </p>
 
-                        <a href="#">
-                           <!-- <svg class="icon-arrow"> -->
-                              <!-- <use width="40" height="40" href="./img/svg/test/linkid.svg#linkid"> -->
-                                    <!-- <use width="40" height="40" href="./img/svg/icone-arrow.svg#arrow">     -->
-                                <!-- </use> -->
-                            <!-- </svg> -->
-                           <span> Узнать подробнее</span>
-                        </a>
+<body class="page__body">
 
+    <header class="header">
+        <div class="container header__container">
+            <a href="./index.html" class="logo"><img src="./img/svg/logo.svg" alt="Logo Advision"
+                    title="Advision" /></a>
+            <nav class="nav header__nav" data-nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Как это работает?</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Кейсы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Заказать демо</a></li>
+                </ul>
+            </nav>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
 
-                </div>
-                    <div class="img-container"><img src="./img/monitor2.jpg" alt="" width="965" height="550" class="back-img">
-                        <div class="decoration-element first"><span>01</span>Бесплатная версия</div>
-                        <div class="decoration-element second"><span>02</span>Удалённое управление</div>
-                        <div class="decoration-element third"><span>03</span>2ГБ памяти</div>
-                        <img src="./img/mobile/mobile-monitor.jpg" alt="scrin"  width="286" height="174" class="mobile-back-img">
-                        <img src="./img/mobile/decoration-element-dir.jpg" alt="" class="mobile-decoration dir-img">
-                        <img src="./img/mobile/decoration-element-favorite.jpg" alt="" class="mobile-decoration favorite-img">
-                        <img src="./img/mobile/decoration-element-recent.jpg" alt="" class="mobile-decoration recent-img">
-                        <img src="./img/mobile/decoration-element-may.jpg" alt="" class="mobile-decoration may-img">
-                    </div>
-                
-                
+            <ul class="header__lang-list">
+                <li class="header__lang-item">Ru</li>
+                <li class="header__lang-item">
+                    <a class="header__lang-link" href="index.htlm">Ua</a>
+                </li>
+                <li class="header__lang-item">
+                    <a class="header__lang-link" href="index.htlm">En</a>
+                </li>
+            </ul>
+
+            <div class="header__btns">
+                <button class="btn header__btns-first header-btn" type="button">
+                    Войти
+                </button>
+                <button class="btn header__btns-second header-btn" type="button">
+                    Подключить экран
+                </button>
             </div>
 
         </div>
+    </header>
 
-    </section>
+    <main>
 
-    <section class="section web-controle">
-        <div class="web-controle__top-container">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__img">
+                    <img src="./img/hero-main.png" aria-hidden="true" alt="пример банеров" />
+                </div>
+                <div class="hero__content">
+                    <p class="hero__main-descr">
+                        Управляйте вашими экранами. Быстро. Просто.
+                        В любое время. Из любого места.
+                    </p>
+                    <h1 class="title-smaller hero__main-title">
+                        Платформа
+                        <span>удалённого</span>
+                        управления рекламными экранами
+                    </h1>
 
-            <div class="web-controle__info-content">
-                <h2>Контролируйте всю сеть через<br>
-                    <a href="#">WEB-кабинет</a>
-                </h2>
+                    <div class="reg-btns">
+                        <button class="btn reg-btns__btn" type="button">
+                            Попробовать бесплатно
+                        </button>
+                        <button class="btn reg-btns__arrow" type="button">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svg/logo.svg" width="40px" height="40px"></use>
+                            </svg>
+                            Заказать демо
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="section display-manage">
+            <div class="display-manage__wraper">
+                <div class="decoration-cubs first-cube"></div>
+                <div class="decoration-cubs second-cube">
+                    <div></div>
+                </div>
+                <div class="decoration-cubs third-cube">
+                    <div></div>
+                </div>
+                <div class="display-content">
+                    <h2>Управлять экранами — это <a href="#">просто</a></h2>
+                    <div class="telephone-text-container">
+                        <p>
+                            Компания Advision - системный интегратор и разработчик
+                            собственного облачного SaaS Digital Signage решения для
+                            ритейла и рекламных операторов. Мы помогаем реализовать
+                            множество механик, связанных с управлением и монетизацией контента.
+                        </p>
+                        <p>
+                            Система Advision быстро и легко устанавливается практически на любой ПК,
+                            и после этого, способна транслировать аудио и видео рекламно-информационный
+                            контент, на акустические системы и экраны любой технологии и размера.
+                        </p>
+
+                        <a href="#">
+                            <!-- <svg class="icon-arrow"> -->
+                            <!-- <use width="40" height="40" href="./img/svg/test/linkid.svg#linkid"> -->
+                            <!-- <use width="40" height="40" href="./img/svg/icone-arrow.svg#arrow">     -->
+                            <!-- </use> -->
+                            <!-- </svg> -->
+                            <span> Узнать подробнее</span>
+                        </a>
+
+
+                    </div>
+                    <div class="img-container"><img src="./img/monitor2.jpg" alt="" width="965" height="550"
+                            class="back-img">
+                        <div class="decoration-element first"><span>01</span>Бесплатная версия</div>
+                        <div class="decoration-element second"><span>02</span>Удалённое управление</div>
+                        <div class="decoration-element third"><span>03</span>2ГБ памяти</div>
+                        <img src="./img/mobile/mobile-monitor.jpg" alt="scrin" width="286" height="174"
+                            class="mobile-back-img">
+                        <img src="./img/mobile/decoration-element-dir.jpg" alt="" class="mobile-decoration dir-img">
+                        <img src="./img/mobile/decoration-element-favorite.jpg" alt=""
+                            class="mobile-decoration favorite-img">
+                        <img src="./img/mobile/decoration-element-recent.jpg" alt=""
+                            class="mobile-decoration recent-img">
+                        <img src="./img/mobile/decoration-element-may.jpg" alt="" class="mobile-decoration may-img">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section web-controle">
+            <div class="web-controle__top-container">
+
+                <div class="web-controle__info-content">
+                    <h2>Контролируйте всю сеть через<br>
+                        <a href="#">WEB-кабинет</a>
+                    </h2>
                     <p>
                         Для управления экранами нужен всего
                         лишь интернет, компьютер или смартфон.
@@ -77,27 +160,35 @@
                         <li><a href="#" class="web-controle__free-link">Попробовать бесплатно</a></li>
                         <li><a href="#" class="web-controle__order-link">Заказать демо</a></li>
                     </ul>
+                </div>
+
+                <div class="img-container">
+                    <img src="./img/mobile/web-controle-img.jpg" alt="" class="telephone-img">
+                    <img src="./img/desktop-web-controle-img.jpg" alt="" class="desktop-img">
+                </div>
+            </div>
+            <div class="web-controle__bootom-container">
+                <h2>
+                    Решения:
+                </h2>
+                <ul class="decisions">
+                    <li class="advertising-networks">
+                        <h3>Рекламные сети</h3>
+                    </li>
+                    <li></li>
+                    <li class="tv">
+                        <h3>Корпоративное ТВ</h3>
+                    </li>
+                    <li class="restorans">
+                        <h3>Рестораны, <br> кафе и бары</h3>
+                    </li>
+                </ul>
+
             </div>
 
-            <div class="img-container">
-                <img src="./img/mobile/web-controle-img.jpg" alt="" class="telephone-img">
-                <img src="./img/desktop-web-controle-img.jpg" alt="" class="desktop-img">
-            </div>
-        </div>
-        <div class="web-controle__bootom-container">
-            <h2>
-                Решения:
-            </h2>
-            <ul class="decisions">
-                <li class="advertising-networks"><h3>Рекламные сети</h3></li>
-                <li></li>
-                <li class="tv"><h3>Корпоративное ТВ</h3></li>
-                <li class="restorans"><h3>Рестораны, <br>  кафе и бары</h3></li>
-            </ul>
-
-        </div>
-
-    </section>
-    
+        </section>
+    </main>
+    <footer class="footer"></footer>
 </body>
+
 </html>

@@ -1,14 +1,30 @@
 //global vars
-$text-color:#002E50;
-$light-blue-color:#202FB6;
-$yellow-color: #E1FC52;
-
+$text-color: #002e50;
+$light-blue-color: #202fb6;
+$yellow-color: #e1fc52;
 
 //telephone vars
 $telephone-min-width: 375px;
 
-
 //desktop vars
 $desktop-min-width: 800px;
 $sector-max-width: 1440px;
-$sector-min-width:1300px;
+$sector-min-width: 1300px;
+
+:root {
+  --main-fond: 'Roboto', sans-serif;
+  --secondary-fond: 'Raleway', sans-serif;
+  --font-style: normal;
+  --font-weight: 400;
+  --font-size: 14px;
+  --line-height: 130%;
+
+  --white-color: #ffffff;
+  --blue-color: #202fb6;
+  --dark-blue-color: rgb(0, 46, 80);
+  --yellow-color: rgb(225, 252, 82);
+  --violet-color: rgb(214, 185, 252);
+
+  /* --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  --main-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}

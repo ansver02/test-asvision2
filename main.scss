@@ -1,4 +1,21 @@
+@import './scss/vendor/normalise';
 @import './scss/vars';
+@import './scss/mixins/mini';
+
+//base
+@import './scss/base/settings';
+
+//components
+@import './scss/components/nav';
+// @import './components/logo';
+
+// layout
+@import './scss/layout/header';
+@import './scss/layout/hero';
+@import './scss/layout/footer';
+
+// breakpoints
+// @import './mixins/breakpoints';
 
 //mobile style
 @import './scss/mobile/mobile-global';
@@ -8,129 +25,121 @@
 @import './scss/desktop/desktop-main';
 
 @media screen and(min-width:$desktop-min-width) {
-    .web-controle{
-        background-color: $light-blue-color;
-        padding: 30px 30px 0px 30px;
+  .web-controle {
+    background-color: $light-blue-color;
+    padding: 30px 30px 0px 30px;
 
+    .web-controle__top-container {
+      display: flex;
+      border-radius: 10px;
 
-
-        .web-controle__top-container{
-            display: flex;
-            border-radius: 10px;
-
-            .web-controle__info-content{
-                background-color: $yellow-color;
-                border-radius: 10px 0 0 10px;
-                h2{
-                    margin: 95px auto 25px auto;
-                    max-width: 490px;
-                    color: $text-color;
-                    font-size: 48px;
-                    a{
-                        color: $text-color;  
-                        &:hover{
-                            color: $light-blue-color;
-                        }  
-                    }
-                }
-                p{
-                    color: $text-color;
-                    margin-bottom: 145px;
-                }
-                .link-container{
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    
-                    .web-controle__free-link{
-                        background-color: #fff;
-                        margin: 0;
-                        border-radius: 5px;
-                        margin-right: 25px;
-
-                        &:hover{
-                            background-color: $light-blue-color;
-                            color: #fff;
-                        }
-
-                    }
-                    .web-controle__order-link{
-                        color: $text-color;
-                        margin: 0;
-
-                        &:hover{
-                            color: $light-blue-color;
-                        }
-                        &::before{
-                            background-image: url(../img/icons-arrow/blue_arrow_grey_fone.jpg);
-                        }
-                    }
-                }
+      .web-controle__info-content {
+        background-color: $yellow-color;
+        border-radius: 10px 0 0 10px;
+        h2 {
+          margin: 95px auto 25px auto;
+          max-width: 490px;
+          color: $text-color;
+          font-size: 48px;
+          a {
+            color: $text-color;
+            &:hover {
+              color: $light-blue-color;
             }
-
-            .img-container{
-                .desktop-img{
-                    display: block;
-                    border-radius: 0 10px 10px 0;
-                }
-                .telephone-img{
-                    display: none;
-                    
-                }
-            }
-
+          }
         }
-
-        &__bootom-container{
-            display: block;
-            padding-top: 105px;
-            text-align: center;
-            
-            h2{
-                margin: 0;
-                color: #fff;
-                font-weight: 700;
-                font-size: 56px;
-                line-height: 109.52%;
-            }
-            .decisions{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                margin: 0;
-                padding: 0;
-                text-align: left;
-
-                li{
-                    list-style: none;
-                    margin: 0;
-                    margin-bottom: 15px;
-                    padding: 0;
-                    width: calc((100% - 30px)/2);
-                    min-height: 386px;
-                    border-radius: 10px;
-
-                    h3{
-                        margin-left: 65px;
-                        font-weight: 500;
-                        font-size: 40px;
-                        line-height: 100.5%;
-                        color: #fff;
-                    }
-                }
-                .advertising-networks{
-                    background-image: url(../img/nout-img.jpg);
-                }
-                .tv{
-                    background-image: url(../img/tv-img.jpg);
-                }
-                .restorans{
-                    background-image: url(../img/restorans-img.jpg);
-                }
-            }
+        p {
+          color: $text-color;
+          margin-bottom: 145px;
         }
+        .link-container {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+
+          .web-controle__free-link {
+            background-color: #fff;
+            margin: 0;
+            border-radius: 5px;
+            margin-right: 25px;
+
+            &:hover {
+              background-color: $light-blue-color;
+              color: #fff;
+            }
+          }
+          .web-controle__order-link {
+            color: $text-color;
+            margin: 0;
+
+            &:hover {
+              color: $light-blue-color;
+            }
+            &::before {
+              background-image: url(../img/icons-arrow/blue_arrow_grey_fone.jpg);
+            }
+          }
+        }
+      }
+
+      .img-container {
+        .desktop-img {
+          display: block;
+          border-radius: 0 10px 10px 0;
+        }
+        .telephone-img {
+          display: none;
+        }
+      }
     }
- 
 
-     
- }
+    &__bootom-container {
+      display: block;
+      padding-top: 105px;
+      text-align: center;
+
+      h2 {
+        margin: 0;
+        color: #fff;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 109.52%;
+      }
+      .decisions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+
+        li {
+          list-style: none;
+          margin: 0;
+          margin-bottom: 15px;
+          padding: 0;
+          width: calc((100% - 30px) / 2);
+          min-height: 386px;
+          border-radius: 10px;
+
+          h3 {
+            margin-left: 65px;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 100.5%;
+            color: #fff;
+          }
+        }
+        .advertising-networks {
+          background-image: url(../img/nout-img.jpg);
+        }
+        .tv {
+          background-image: url(../img/tv-img.jpg);
+        }
+        .restorans {
+          background-image: url(../img/restorans-img.jpg);
+        }
+      }
+    }
+  }
+}

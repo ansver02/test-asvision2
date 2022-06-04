@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// .site-container {
+//   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+// }
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+body {
+  margin: 0;
+  // font-family: 'Ubuntu', sans-serif;
+  // font-weight: 400;
+
+  font-family: var(--main-fond);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  // color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  // min-height: 2000px;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1380px;
+}
+
+.main-title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  &__home {
+    margin-bottom: 20px;
+    color: var(--color-white);
+    span {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 16px 28px;
+  font-size: 16px;
+  // letter-spacing: 0.5px;
+  text-transform: none;
+  text-align: center;
+  cursor: pointer;
+  // color: var(--color-white);
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: 1px solid var(--color-primary);
+    border-radius: 3px;
+  }
+  &--fill {
+    background-color: var(--color-primary);
+  }
+}
+
+.title {
+  text-transform: initial;
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--color-dark-gray);
+  &--center {
+    text-align: center;
+  }
+}
+
+.title-smaller {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 109.52%;
+  &--center {
+    text-align: center;
+  }
+}
+.sentered {
+  width: 100%;
+  text-align: center;
+}
+
+.none {
+  display: none;
+}

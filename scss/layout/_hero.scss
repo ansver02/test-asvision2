@@ -1,0 +1,32 @@
+.hero {
+  background-color: var(--blue-color);
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: flex-start;
+    color: var(--white-color);
+  }
+  &__content {
+    padding-left: 4px;
+    max-width: 647px;
+    height: auto;
+  }
+  &__main-descr {
+    font-size: 14px;
+    line-height: 145%;
+    opacity: 0.7;
+  }
+  span {
+    color: var(--yellow-color);
+  }
+
+  &__img {
+    width: 519px;
+    height: 555px;
+    filter: drop-shadow(19px 0px 35px rgba(0, 0, 0, 0.19));
+    img {
+      vertical-align: bottom;
+    }
+  }
+}
